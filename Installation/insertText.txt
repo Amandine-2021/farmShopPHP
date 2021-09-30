@@ -1,1 +1,16 @@
-
+INSERT INTO products (name, price, unit, image, stock) 
+			VALUES 
+			('beets', 3, 'bunch', 'images/beets.jpg', 100),   
+			('carrots', 2, 'bunch', 'images/carrots.jpg', 120),
+			('buternut squash', 1.5, 'lb', 'images/butternut.jpg', 120),
+			('onions', 1, 'lb', 'images/onions.jpg', 20),
+			('tomatoes', 3, 'lb', 'images/tomatoes.jpg', 120),
+			('apples', 2, 'lb', 'images/apples.jpg', 120),
+			('zucchini', 2, 'lb', 'images/zucchini.jpg', 100),
+			('apricots', 2.5, 'lb', 'images/apricots.jpg', 100),
+			('cucumbers', 1.5, 'lb', 'images/cucumbers.jpg', 0),
+			('plums', 2.5, 'lb', 'images/plums.jpg', 100),
+			('peaches', 3, 'lb', 'images/peaches.jpg', 100),
+			('aspargus', 2, 'bunch', 'images/aspargus.jpg', 100),
+			('kale', 1.5, 'bunch', 'images/kale.jpg', 100);
+			
