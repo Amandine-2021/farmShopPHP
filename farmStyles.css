@@ -1,0 +1,194 @@
+/*CWB 208 PHP Project
+	file: index.php
+	Amandine Velamala 
+	description: CSS file for layout and styles */
+
+/*general styles*/
+html {
+	font-family: 'Crimson Text', serif;
+	font-size: 18px;	
+}
+header, nav {
+	text-align: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+nav, footer {
+	background-color: brown;
+	color: white;
+}
+#mainContent {
+	max-width: 900px;
+	margin: auto;
+}	
+h1 {
+	text-align: center;
+	font-size: 28px;
+}
+a {
+  text-decoration: none; 
+}
+ul {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  list-style-type: none;
+  list-style-position: inside;
+}
+.error {
+	color: crimson;	
+}
+/*navigation styles*/
+nav  ul {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+}
+nav li{ 
+  flex: 1;
+  padding: 15px 3px 15px;
+  text-align: center;
+}
+nav li a {
+  font-size: 22px;
+  color: white;
+}
+/*button styles*/
+.submitBtn {
+	border:none;
+	color: white;
+	background-color: brown;
+	width: 120px;
+	font-size: 18px;
+	height: 40px; 
+	font-family: 'Crimson Text', serif;
+}
+/*home page styles*/
+#homePagePictures {
+	text-align: center;
+} 
+#dailymsg {
+	color: brown;
+	text-align: center;
+	background: whitesmoke;
+	padding: 6px;
+}
+/*products page styles */
+.producePage {
+text-align: center;
+}
+#flexContainer {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+.productContainer {	
+	padding: 7px;
+	margin: 7px;
+	text-align: center;
+	flex: 0 0 30%;
+	line-height: 1.5;   
+}	
+.productContainer img {
+	width: 97%;
+}
+/*basket page styles*/
+#receipt {
+	max-width: 600px;
+	margin: auto;
+}
+.center {
+	text-align: center;
+}
+.imageReceipt {
+	width: 110px;
+}
+td {	
+	padding: 5px;
+	background: whitesmoke;
+}
+.total {
+	text-align: right;
+}
+.totalCell {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	background: whitesmoke;
+	border: brown 1px solid;
+}
+#customerInfo {
+	max-width: 380px;
+	margin: auto;
+	background: whitesmoke;
+	padding: 1rem;
+	margin-bottom: 1.5rem;;
+}
+/*contact page styles */
+#contactForm {
+  max-width  : 600px;
+  margin: auto;
+  text-align: left;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: whitesmoke;
+}
+#contactForm input, #contactForm textarea {
+  border: 1px solid brown; 
+  padding: 4px;
+}
+#contactForm textarea {
+  width: 80%;
+  height: 15%;
+}
+
+#statusMsg {
+	text-align: center;
+	color: brown;
+}
+
+/*footer position styles*/
+#wholePage {
+  position: relative;
+  min-height: 100vh;
+}
+#mainContent {
+	padding-bottom: 4rem;
+}
+
+#footer {
+position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4rem; 
+  text-align: center;
+  font_size: 14px;
+}
+/*media query for smaller screens*/
+@media (max-width: 899px){
+	.productContainer {
+		flex: 0 0 45%;
+	}	
+}
+@media (max-width: 699px){
+	#img2 {
+		display: none;
+	}
+}
+@media  (max-width: 479px){
+	.productContainer {
+		flex: 0 0 80%;
+	}
+	.imageReceipt {
+		width: 60px;
+	}
+	html {
+		font-size: 1rem;
+	}
+	h1 {
+		font-size: 1.2.rem;
+	}
+	nav li a {
+		font-size: 1.1.rem;
+	}
+}
